@@ -14,7 +14,21 @@
           "name": "Robert Shanks",
           "born": 1781,
           "died": 1871,
+          "location": "Ireland/Petersburg, VA",
+          "parents": [
+        {
+          "name": "Robert Shanks",
+          "born": 1781,
+          "died": 1871,
           "location": "Ireland/Petersburg, VA"
+        },
+        {
+          "name": "Elizabeth Shanks",
+          "born": 1795,
+          "died": 1871,
+          "location": "Ireland/Petersburg, VA"
+        }
+      ]
         },
         {
           "name": "Elizabeth Shanks",
