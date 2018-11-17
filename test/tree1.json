@@ -5,7 +5,7 @@
         ]},
         {"born": 1973, "firstname": "지형근", "children": [
             {"born": 2009, "firstname": "지예나"}
-        ]},
+        ]}
     ]},
     {"born": 1946, "firstname": "지순애&김정상", "children": [
         {"born": 1971, "firstname": "김범식&지나", "children": [
