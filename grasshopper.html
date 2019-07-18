@@ -10,22 +10,19 @@
 <body>
 
 <!-- Links (sit on top) -->
-<div class="w3-top">
-  <div class="w3-row w3-padding w3-black">
-    <div class="w3-col s3">
-		<a href="index.html" class="w3-button w3-block w3-black">Home</a>
-    </div>
-    <div class="w3-col s3">
-       <a href="paramDesign.html" class="w3-button w3-block w3-black">Parametric Design</a>
-    </div>
-    <div class="w3-col s3">
-		<a href="grasshopper.html" class="w3-button w3-block w3-black">Grasshopper Workflow</a>	
-    </div>
-    <div class="w3-col s3">
-		<a href="about.html" class="w3-button w3-block w3-black">About</a>
-    </div>
+
+  <div class="w3-bar w3-xlarge w3-black">
+    
+		<a href="index.html" class="w3-bar-item w3-black">Home</a>
+   
+       <a href="casestudy.html" class="w3-bar-item w3-block w3-black">Paracraft</a>
+  
+       <a href="paramDesign.html" class="w3-bar-item w3-block w3-black">Parametric Design</a>
+   
+		<a href="grasshopper.html" class="w3-bar-item w3-block w3-black">Grasshopper Workflow</a>	
+		<a href="about.html" class="w3-bar-item w3-block w3-black">About</a>
   </div>
-</div>
+
 
 
 
@@ -43,7 +40,7 @@
 	  
 	<p>Although intimidating at first glance, the Rhino interface can easily be broken down into 4 main section. These sections,as seen in the figure bellow, are the toolbar (1), sidebar (2), the viewports(3), and panels (4). Since it is not the main focus of this tutorial, this interface will only be explained up to the point needed to use Grasshopper. For more information on rhino itself, the official tutorial seres can be found <a href="https://www.rhino3d.com/tutorials">here.</a>  </p>
 	  
-	   <img src="overview.png" alt="Overview with lables" width=60% height=60%> 
+	   <img src="content/tutorial/overview.png" alt="Overview with lables" width=60% height=60%> 
 	  
 	<p>The toolbar is where projects can be saved and loaded, and settings can be changed, as in most programs. However, the Rhino toolbar includes a command line interface, where the user can type in any of the different function Rhino includes. This interface also features and In addition to this, the toolbar offers several different kinds of layouts, that can be selected and customized based on what takes the user is currently preforming. For now, the default setting is all that is needed. Changing the kind of layout also changes what is available in the sidebar. The sidebar offers quick access to a suite of tools most relevant to the toolset the user has selected. </p>
 	
@@ -53,36 +50,41 @@
 	
 
 	 <h3 class="w3-text-teal">Grasshopper Fundamentals</h3>
-	 <p> </p> 
-	 
+
 	 <p>An component in Grasshopper is made up of three parts; the input, the operation, and the output. Each operation is a mathematical function that manipulates  some form of data. Data is passed between objects through the use of <i>wires</i>, in a similar manner to other visual scripting languages, and flows from left to right. The data used is usually some kind of 3D object, such as a point, a line, or a surface, or an operation being applied to a 3D object. Lists of data can also be processed by a single object. When an object is producing multiple pieces of data, the connection between objects becomes a dashed line instead of a solid one. A list can be flattened into a single piece of data by using the <i>flatten tree</i> object type, or by right clicking on the object outlet that is producing the list of data.</p>
 	
-	<img src="object_Example.png" alt="object examples" width=60% height=60%>
+	<img src="content/tutorial/object_Example.png" alt="object examples" width=60% height=60%>
 	
 	<p>An issue or error when processing an algorithm is displayed by a color change in the problematic object. An orange object is one that has run, but has encountered an error while doing so. A red object is one that was unable to run do to its error. When an object faces an error, it creates a small text bubble that can be red by mousing over its icon in the top left corner of the object. Keep in mind that it is possible for an object to face multiple errors at once. If a wire is not passing any data between objects due to an error, it will appear as orange instead of gray.  </p> 
 	  
-	<img src="error_Example.png" alt="error examples" width=60% height=60%>
+	<img src="content/tutorial/error_Example.png" alt="error examples" width=60% height=60%>
 	
-	<p>In order to use  objects created in Rhino in Grasshopper, the... In order to permanently create a 3D model in the Rhino workspace, right click the Grasshopper component creating that object and select the <i>bake</i> option</p> 
+	<p>In order to use objects created in Rhino in Grasshopper, right click the input of the component you wish to use the Rhino object with. From there, use the <i>set one object</i> option. The name of this option will change depending on the kind of data that component accepts. From there, the user will be promoted to select the object the wish to assign to that input from the Rhino viewport. In order to permanently create a 3D model in the Rhino workspace, right click the Grasshopper component creating that object and select the <i>bake</i> option</p> 
 	 
 	<h3 class="w3-text-teal">The Grasshopper Interface</h3>
 	<p>Despite offering a completely different toolset, the Grasshopper interface is very similar to that of its parent software. At the top of the screen, there is toolbar that, in addition to the standard functionality of saving, loading, settings, etc. can be used to select the different tools available in Grasshopper. These tools are divided into sections based on function. Each section is further divided into subsections, which can be expanded into a dropdown menu of their own  by clicking the section label.  The main viewport (2) By pressing either middle mouse or the spacebar, the user can bring up a radial menu similar to the one found in Maya (3). </p>
 	
-	<p>components can be created in the workspace by either clicking and dragging them from the toolbar, by clicking the item in the toolbar and clicking the point where the component should be created, or by double clicking an empty part of the workspace and searching for the desired component in the text box that appears.  </p>
+	<p></p>
+	
+	<p>Components can be created in the workspace by either clicking and dragging them from the toolbar, by clicking the item in the toolbar and clicking the point where the component should be created, or by double clicking an empty part of the workspace and searching for the desired component in the text box that appears.  </p>
 	   
-	<img src="grasshopperview.png" alt="Overview with labels" width=60% height=60%>
+	<img src="content/tutorial/grasshopperview.png" alt="Overview with labels" width=60% height=60%>
 	
 	<p>Objects successfully generated with Grasshopper will appear in the Rhino viewport. By default, they will appear red and translucent, but will turn green when the component that is generating them is selected in grasshopper. In the bottom right of the toolbar, there are several options to change which objects are drawn in Rhino, as well as how they appear.  </p>
 	
-	<img src="preview_Example.png" alt="Example of a preview in Rhino" width=60% height=60%>
+	<img src="content/tutorial/preview_Example.png" alt="Example of a preview in Rhino" width=60% height=60%>
 
-	<p>Some components in Grasshopper have interactive GUI elements that can be used to affect the algorithm in real time. The most common of these components are _________. Users can include components they produced in the Rhino by ____________</p> 
+	<p>Some components in Grasshopper have interactive GUI elements that can be used to affect the algorithm in real time. The most common of these components are the <i>slider</i>, and the <i> MD slider</i>. These two components rpovide a way to edit variables in a quick and user friednly way, and can be customized by  </p> 
 
 	 <h3 class="w3-text-teal">Grasshopper Tools</h3>
 	 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 	
 	  
 	  <h3 class="w3-text-teal">Tips & Tricks for Grasshopper</h3>
+	  
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+   
+	 <h3 class="w3-text-teal">Further Reading</h3>
 	  
      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
