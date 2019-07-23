@@ -10,17 +10,14 @@
 <body>
 
 <!-- Links (sit on top) -->
-
-  <div class="w3-bar w3-xlarge w3-black">
+	<div class="w3-bar w3-xlarge w3-black">
     
-		<a href="index.html" class="w3-bar-item w3-black">Home</a>
-   
-       <a href="casestudy.html" class="w3-bar-item w3-block w3-black">Paracraft</a>
-  
-       <a href="paramDesign.html" class="w3-bar-item w3-block w3-black">Parametric Design</a>
-   
-		<a href="grasshopper.html" class="w3-bar-item w3-block w3-black">Grasshopper Workflow</a>	
-		<a href="about.html" class="w3-bar-item w3-block w3-black">About</a>
+		<a href="index.html" class="w3-bar-item w3-button">Home</a>
+		<a href="paramDesign.html" class="w3-bar-item w3-button w3-black">Parametric Design</a>
+		<a href="grasshopper.html" class="w3-bar-item w3-button w3-black">Grasshopper Workflow</a>	
+		<a href="examples.html" class="w3-bar-item w3-button w3-black">Patch Examples</a>
+		<a href="casestudy.html" class="w3-bar-item w3-button w3-black">Paracraft</a>
+		<a href="about.html" class="w3-bar-item w3-block w3-button">About</a>
   </div>
 
 
@@ -51,11 +48,11 @@
 
 	 <h3 class="w3-text-teal">Grasshopper Fundamentals</h3>
 
-	 <p>An component in Grasshopper is made up of three parts; the input, the operation, and the output. Each operation is a mathematical function that manipulates  some form of data. Data is passed between objects through the use of <i>wires</i>, in a similar manner to other visual scripting languages, and flows from left to right. The data used is usually some kind of 3D object, such as a point, a line, or a surface, or an operation being applied to a 3D object. Lists of data can also be processed by a single object. When an object is producing multiple pieces of data, the connection between objects becomes a dashed line instead of a solid one. A list can be flattened into a single piece of data by using the <i>flatten tree</i> object type, or by right clicking on the object outlet that is producing the list of data.</p>
+	 <p>An component in Grasshopper is made up of three parts; the input (1), the operation, and the output (2). Each operation is a mathematical function that manipulates  some form of data. Data is passed between objects through the use of <i>wires</i> (3), in a similar manner to other visual scripting languages, and flows from left to right. The data used is usually some kind of 3D object, such as a point, a line, or a surface, or an operation being applied to a 3D object. Lists of data can also be processed by a single object. When an object is producing multiple pieces of data, the connection between objects becomes a dashed line instead of a solid one (4). A list can be flattened into a single piece of data by using the <i>flatten tree</i> object type, or by right clicking on the object outlet that is producing the list of data.</p>
 	
 	<img src="content/tutorial/object_Example.png" alt="object examples" width=60% height=60%>
 	
-	<p>An issue or error when processing an algorithm is displayed by a color change in the problematic object. An orange object is one that has run, but has encountered an error while doing so. A red object is one that was unable to run do to its error. When an object faces an error, it creates a small text bubble that can be red by mousing over its icon in the top left corner of the object. Keep in mind that it is possible for an object to face multiple errors at once. If a wire is not passing any data between objects due to an error, it will appear as orange instead of gray.  </p> 
+	<p>An issue or error when processing an algorithm is displayed by a color change in the problematic object. An orange object is one that has run, but has encountered an error while doing so (1). A red object is one that was unable to run do to its error (2). When an object faces an error, it creates a small text bubble that can be read by mousing over its icon in the top left corner of the object (3). Keep in mind that it is possible for an object to face multiple errors at once. If a wire is not passing any data between objects due to an error, it will appear as orange instead of gray (4).  </p> 
 	  
 	<img src="content/tutorial/error_Example.png" alt="error examples" width=60% height=60%>
 	
@@ -74,19 +71,15 @@
 	
 	<img src="content/tutorial/preview_Example.png" alt="Example of a preview in Rhino" width=60% height=60%>
 
-	<p>Some components in Grasshopper have interactive GUI elements that can be used to affect the algorithm in real time. The most common of these components are the <i>slider</i>, and the <i> MD slider</i>. These two components rpovide a way to edit variables in a quick and user friednly way, and can be customized by  </p> 
+	<p>Some components in Grasshopper have interactive GUI elements that can be used to affect the algorithm in real time. The most common of these components are the <i>slider</i> (1), and the <i> MD slider</i> (2). These two components provide a way to edit variables in a quick and user friendly way, and can be customized by right clicking on the object and selecting the edit option, which will open a new window containing options to customize settings such as the range, number type and UI design of the slider (3).   </p> 
 
-	 <h3 class="w3-text-teal">Grasshopper Tools</h3>
-	 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-	
-	  
-	  <h3 class="w3-text-teal">Tips & Tricks for Grasshopper</h3>
-	  
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+   <img src="content/tutorial/slider_Example.png" alt="Example of a interactive elements" width=60% height=60%>
    
 	 <h3 class="w3-text-teal">Further Reading</h3>
 	  
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+     <p><a href="https://www.grasshopper3d.com/page/tutorials-1">Official Grasshopper tutorial.</a></p>
+	<p><a href="https://www.modelab.is/grasshopper-primer/">Detailed Grasshopper primer.</a></p>
+
     </div>
   </div>
   
